@@ -6,12 +6,12 @@ app = Flask(__name__)
 def hello():
     """Return a friendly HTTP greeting."""
     print("I am inside hello world")
-    return 'Hello World'
+    return 'Hello World CD.'
 
 @app.route('/echo/<name>')
 def echo(name):
     print(f"This was placed in the url: new-{name}")
-    val = {"new-name": name}
+    val = {"new-name": name+" CD"}
     return jsonify(val)
 
 if __name__ == '__main__':
